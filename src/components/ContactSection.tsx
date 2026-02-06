@@ -29,11 +29,11 @@ const ContactSection = () => {
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               Ready to transform your business? Get in touch with our team and
-              discover how GreenWave Technologies can accelerate your growth.
+              discover how TeleSpeak Technologies can accelerate your growth.
             </p>
             <div className="space-y-6">
               {[
-                { icon: Mail, label: "hello@greenwave.tech" },
+                { icon: Mail, label: "hello@telespeak.tech" },
                 { icon: MessageSquare, label: "Live Chat Available 24/7" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4">

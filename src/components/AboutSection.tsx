@@ -17,10 +17,10 @@ const AboutSection = () => {
             transition={{ duration: 0.7 }}
           >
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
-              Why Choose <span className="gradient-text">GreenWave</span>?
+              Why Choose <span className="gradient-text">TeleSpeak</span>?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              GreenWave Technologies helps businesses scale using technology-driven
+              TeleSpeak Technologies Pvt. Ltd. helps businesses scale using technology-driven
               outsourcing solutions. We combine innovation with operational excellence
               to deliver measurable results across BPO, digital marketing, and
               custom software development.

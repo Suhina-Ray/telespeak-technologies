@@ -32,10 +32,10 @@ const Navbar = () => {
         {/* Logo */}
         <button onClick={() => scrollTo("home")} className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center glow-border">
-            <span className="font-display font-bold text-primary-foreground text-sm">GW</span>
+            <span className="font-display font-bold text-primary-foreground text-sm">TS</span>
           </div>
           <span className="font-display font-semibold text-lg text-foreground group-hover:text-primary transition-colors">
-            GreenWave
+            TeleSpeak
           </span>
         </button>
 
