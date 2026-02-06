@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Sarah Mitchell",
     role: "CEO, NexaRetail",
-    text: "GreenWave transformed our customer support operations. Their team reduced our response time by 60% and boosted satisfaction scores dramatically.",
+    text: "TeleSpeak transformed our customer support operations. Their team reduced our response time by 60% and boosted satisfaction scores dramatically.",
   },
   {
     name: "David Chen",

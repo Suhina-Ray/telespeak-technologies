@@ -13,10 +13,10 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center glow-border">
-                <span className="font-display font-bold text-primary-foreground text-sm">GW</span>
+                <span className="font-display font-bold text-primary-foreground text-sm">TS</span>
               </div>
               <span className="font-display font-semibold text-lg text-foreground">
-                GreenWave Technologies
+                TeleSpeak Technologies Pvt. Ltd.
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm leading-relaxed">
@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © 2026 GreenWave Technologies. All rights reserved.
+            © 2026 TeleSpeak Technologies Pvt. Ltd. All rights reserved.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service"].map((link) => (
