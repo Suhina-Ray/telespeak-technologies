@@ -20,15 +20,19 @@ const AboutSection = () => {
               Why Choose <span className="gradient-text">TeleSpeak</span>?
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              TeleSpeak Technologies Pvt. Ltd. helps businesses scale using technology-driven
-              outsourcing solutions. We combine innovation with operational excellence
-              to deliver measurable results across BPO, digital marketing, and
-              custom software development.
+              TeleSpeak Technologies Pvt. Ltd. helps businesses scale using
+              technology-driven outsourcing solutions. We combine innovation
+              with operational excellence to deliver measurable results across
+              BPO, digital marketing, and custom software development.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Our mission is simple — empower companies to focus on what they do best
-              while we handle the rest. From lead generation to full-scale customer
-              support, we are your trusted growth partner.
+              "Your success is our mission” We provide dependable, round the
+              clock support tailored to your business needs, backed by
+              expertise, advanced processes, and a dedicated team. We offer
+              solutions that prioritise accuracy, performance, and customer
+              satisfaction. We stand for quality service, transparent
+              communication, and long term partnership helping you stay ahead in
+              a competitive market
             </p>
             <div className="flex flex-wrap gap-3">
               {["Innovation", "Reliability", "Scalability", "24/7 Support"].map(
@@ -58,8 +62,8 @@ const AboutSection = () => {
                 Technology-Driven Growth
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                We leverage cutting-edge AI, automation, and analytics to optimize
-                every touchpoint of your business operations.
+                We leverage cutting-edge AI, automation, and analytics to
+                optimize every touchpoint of your business operations.
               </p>
               <div className="space-y-4">
                 {[
@@ -69,14 +73,22 @@ const AboutSection = () => {
                 ].map((stat) => (
                   <div key={stat.label}>
                     <div className="flex justify-between text-sm mb-1">
-                      <span className="text-muted-foreground">{stat.label}</span>
-                      <span className="text-primary font-semibold">{stat.value}%</span>
+                      <span className="text-muted-foreground">
+                        {stat.label}
+                      </span>
+                      <span className="text-primary font-semibold">
+                        {stat.value}%
+                      </span>
                     </div>
                     <div className="h-2 rounded-full bg-secondary overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={isInView ? { width: `${stat.value}%` } : {}}
-                        transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
+                        transition={{
+                          duration: 1.2,
+                          delay: 0.5,
+                          ease: "easeOut",
+                        }}
                         className="h-full rounded-full bg-primary"
                       />
                     </div>

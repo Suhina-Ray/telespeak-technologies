@@ -3,13 +3,19 @@ import { useRef, useEffect, useState } from "react";
 import { Users, TrendingUp, UserCheck, Award } from "lucide-react";
 
 const stats = [
-  { icon: Users, value: 500, suffix: "+", label: "Clients" },
-  { icon: TrendingUp, value: 10000, suffix: "+", label: "Leads Generated" },
+  { icon: Users, value: 50, suffix: "+", label: "Clients" },
+  { icon: TrendingUp, value: 50000, suffix: "+", label: "Leads Generated" },
   { icon: UserCheck, value: 50, suffix: "+", label: "Team Members" },
-  { icon: Award, value: 8, suffix: "+", label: "Years Experience" },
+  { icon: Award, value: 10, suffix: "+", label: "Years Experience" },
 ];
 
-const AnimatedCounter = ({ target, inView }: { target: number; inView: boolean }) => {
+const AnimatedCounter = ({
+  target,
+  inView,
+}: {
+  target: number;
+  inView: boolean;
+}) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -37,7 +43,10 @@ const StatsSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-50px" });
 
   return (
-    <section id="solutions" className="section-padding relative overflow-hidden">
+    <section
+      id="solutions"
+      className="section-padding relative overflow-hidden"
+    >
       {/* Glow bg */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px]" />

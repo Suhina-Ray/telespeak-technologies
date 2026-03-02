@@ -6,7 +6,11 @@ import { toast } from "sonner";
 const ContactSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,10 +31,20 @@ const ContactSection = () => {
             <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">
               Let's <span className="gradient-text">Connect</span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               Ready to transform your business? Get in touch with our team and
               discover how TeleSpeak Technologies can accelerate your growth.
             </p>
+
+            {/* Added Company Info */}
+            <p className="text-foreground font-semibold mb-2">
+              Telespeak Technologies Private Limited
+            </p>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-8">
+              Address: 86 Golaghata Road, Dakshindari, Ultadanga, Sreebhumi,
+              North 24 Parganas, Sreebhumi, West Bengal, India, 700048
+            </p>
+
             <div className="space-y-6">
               {[
                 { icon: Mail, label: "hello@telespeak.tech" },
@@ -64,12 +78,15 @@ const ContactSection = () => {
                     required
                     maxLength={100}
                     value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     className="w-full pl-11 pr-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-colors"
                     placeholder="Your name"
                   />
                 </div>
               </div>
+
               <div>
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
                   Email
@@ -81,12 +98,15 @@ const ContactSection = () => {
                     required
                     maxLength={255}
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, email: e.target.value })
+                    }
                     className="w-full pl-11 pr-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
+
               <div>
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
                   Message
@@ -98,12 +118,15 @@ const ContactSection = () => {
                     maxLength={1000}
                     rows={4}
                     value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                     className="w-full pl-11 pr-4 py-3 bg-secondary/50 border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/30 transition-colors resize-none"
                     placeholder="How can we help?"
                   />
                 </div>
               </div>
+
               <button
                 type="submit"
                 className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-lg transition-all duration-300 hover:scale-[1.02] glow-border"

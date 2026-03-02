@@ -8,10 +8,17 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background image */}
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
+        <img
+          src={heroBg}
+          alt=""
+          className="w-full h-full object-cover opacity-40"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       </div>
 
@@ -30,7 +37,9 @@ const HeroSection = () => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/5 mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse-glow" />
-            <span className="text-sm font-medium text-primary">Innovating Business Solutions</span>
+            <span className="text-sm font-medium text-primary">
+              Innovating Business Solutions
+            </span>
           </motion.div>
 
           <motion.h1
@@ -49,8 +58,8 @@ const HeroSection = () => {
             transition={{ delay: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            We transform customer engagement through cutting-edge outsourcing solutions
-            and digital transformation — helping businesses scale faster and smarter.
+            Your Trusted Partner for Powering growth and 24/7 Customer Care
+            Support
           </motion.p>
 
           <motion.div
@@ -64,10 +73,17 @@ const HeroSection = () => {
               className="group flex items-center gap-2 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-lg transition-all duration-300 hover:scale-105 animate-pulse-glow"
             >
               Get Started
-              <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
+              <ArrowRight
+                size={20}
+                className="transition-transform group-hover:translate-x-1"
+              />
             </button>
             <button
-              onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() =>
+                document
+                  .getElementById("about")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
               className="px-8 py-4 rounded-lg border border-border text-foreground font-display font-medium text-lg hover:border-primary/50 hover:bg-secondary/50 transition-all duration-300"
             >
               Learn More
